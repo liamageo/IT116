@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lia's Forms</title>
+</head>
+
+<!-- Creating Forms With Monte using form element and URLs-->
+<body>    
+    <section>
+        <h1>UserName and Password</h1>
+            <form action="/tacos">
+                
+                <!--Label and textbox are bound together by the ID-->
+                <p>
+                    <label for="username">Enter A Name:</label>
+                    <input id="username" type="text" placeholder="Username" name="username">
+                
+                </p>
+                <!--Username^and password textbox needs an ID and name -->
+                <p>
+                    <label for="Password">Enter A Password:</label>
+                    <input id="Password" type="text" placeholder="Password" name="Password">
+                
+                </p>                
+            </form>
+    </section>
+
+    <hr>
+    <section>
+        <h1>Query Strings</h1>
+        <!--Query Strings, the search query portion of a url. Note to self: q is for query-->
+            <form action="https://www.reddit.com/search/">
+
+                    <input type="text" name="q">
+                    <button>Submit Reddit</button>
+            </form>
+      
+        <!--Youtube Query String-->
+            <form action="https://www.youtube.com/results?search_query">
+                        
+                    <input type="text" name="q">
+                    <button>Search Youtube</button>
+            </form>          
+     
+        <!--Google Query String-->
+            <form action="https://www.google.com/search?q">
+                        
+                    <input type="text" name="q">
+                    <button>Search Google</button>
+            </form>
+    </section>
+   
+    <hr>
+ <!--Making labels and checkboxes-->
+    <section>
+        <h1>Radio Buttons and Checkboxes</h1>
+            <form action="birds">
+                
+                <label for="agree">I agree to everything</label>
+                <input type="checkbox" name="agree_tos" id="agree">
+             <!--The label and value are bound together make sure each label matches the designated value-->   
+                <p>
+                    <label for="s">Small</label>
+                    <input type="radio" name="size" id="s" value="s">
+
+                    <label for="m">Medium</label>
+                    <input type="radio" name="size" id="m" value="m">
+
+                    <label for="l">Large</label>
+                    <input type="radio" name="size" id="l" value="l">
+            
+                </p>
+            <!-- Combo/drop down box-->
+                <p>
+                    <label for="favColor">What is your favorite color</label>
+                
+                    <select name="favorite" id="faveColor">
+
+                        <option value="Red">Red</option>
+                        
+                        <option value="Green">Green</option>
+
+                        <option value="Blue">Blue</option>
+                            
+                    </select>
+
+
+
+
+                </p>
+                <!--Button needs to be within the Form not outside-->
+                <button>Submit Button</button>
+            </form>
+    </section>
+</body>
+</html>
