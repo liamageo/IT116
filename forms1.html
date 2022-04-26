@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lia's Forms</title>
+    <title>Lia's In-Class Exercise Form</title>
 </head>
 
-<!-- Creating Forms With Monte using form element and URLs-->
+<!-- Creating Forms With Monte using FORM element -->
 <body>    
     <section>
         <h1>UserName and Password</h1>
             <form action="/tacos">
                 
-                <!--Label and textbox are bound together by the ID-->
+                <!-- LABEL refers to the label and INPUT refers to the textbox. Both BOUNDED by ID and NAME -->
                 <p>
                     <label for="username">Enter A Name:</label>
                     <input id="username" type="text" placeholder="Username" name="username">
                 
                 </p>
-                <!--Username^and password textbox needs an ID and name -->
+                <!-- Below is the same setup for the code above. Both are bounded by an ID and name-->
                 <p>
                     <label for="Password">Enter A Password:</label>
                     <input id="Password" type="text" placeholder="Password" name="Password">
@@ -27,7 +27,7 @@
                 </p>                
             </form>
     </section>
-
+<!--Creating Query Strings with Monte using FORM. FORM needs a URL to send to server-->
     <hr>
     <section>
         <h1>Query Strings</h1>
@@ -54,14 +54,15 @@
     </section>
    
     <hr>
- <!--Making labels and checkboxes-->
+ <!-- Practicing RADIO BUTTONS and CHECKBOXES with Monte -->
     <section>
         <h1>Radio Buttons and Checkboxes</h1>
             <form action="birds">
-                
+            <!-- We created a CHECKBOX, which allows users to selected ZERO or MORE options -->   
                 <label for="agree">I agree to everything</label>
                 <input type="checkbox" name="agree_tos" id="agree">
-             <!--The label and value are bound together make sure each label matches the designated value-->   
+ 
+                <!-- This section we practice with input type RADIO, it allows users to ONLY SELECT ONE of limited choices -->   
                 <p>
                     <label for="s">Small</label>
                     <input type="radio" name="size" id="s" value="s">
@@ -73,7 +74,7 @@
                     <input type="radio" name="size" id="l" value="l">
             
                 </p>
-            <!-- Combo/drop down box-->
+            <!-- Option is used to define item in select-->
                 <p>
                     <label for="favColor">What is your favorite color</label>
                 
@@ -84,16 +85,54 @@
                         <option value="Green">Green</option>
 
                         <option value="Blue">Blue</option>
-                            
+
                     </select>
 
+                </p>
+                <!--Using range for SCROLLBAR, practicing min and max-->
+                <p>
 
-
+                    <label for="scroll">Lia's Scrollbar</label>
+                    <input type="range" id="scroll" min="5" max="10" name="scrollbar">
 
                 </p>
-                <!--Button needs to be within the Form not outside-->
+                <!--Using TEXTAREA element and attributes like rows and cols-->
+                <p>
+  
+                    <label for="requests">Type Into This Box</label>
+                    <textarea id="requests" name="reqs" rows="15" cols="15" placeholder="Type Something Here!"></textarea>
+
+                </p>
+ 
+ 
+                <!--BUTTON needs to be within the Form not outside-->
                 <button>Submit Button</button>
             </form>
+    </section>
+    <hr>
+ 
+    <!-- -->
+    <section>
+        <h2>Form Validations</h2>
+        <form action="/bananas">
+            <!-- -->
+            <label for="required1"></label>
+            <input type="text" name="funny" id="required1" required>
+
+            <!---->
+            <label for="length"></label>
+            <input type="text" name="lengthy" id="length" minlength="5" maxlength="10">
+            
+            <!-- -->
+            <p>
+                <!-- A field for editing an email address-->
+                <input type="email" required>
+
+            </p>
+ 
+ 
+            <button type="submit">Submit</button>
+        </form>
     </section>
 </body>
 </html>

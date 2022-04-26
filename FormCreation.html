@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lia's HTML Form Creation</title>
+</head>
+
+<!--This is my HTML Form Creation assignment using the FORM element-->
+<body>
+    <selection>
+        <h1>Please fill out the form below</h1>
+            <form action="/food">
+                <!--Below is my LABEL and my TEXTBOX, both objects BOUND by an ID and NAME-->
+                <p> 
+ 
+                    <label for="firstname">First Name:</label>
+                    <input id="firstname" type="text" placeholder="First Name" name="First name:"> 
+ 
+                </p>              
+                <p>
+
+                    <label for="lastname">Last Name:</label>
+                    <input id="lastname" type="text" placeholder="Last Name" name="Last Name:">
+
+                </p>            
+               <!--This is my COMBO/DROP DOWN BOX, using SELECT and OPTION elements-->
+                <p>
+                    <label for="favfood">Which food would you like to eat?</label>
+                    
+                    <select name="favorite" id="favefood">
+
+                        <option value="Chicken">Chicken</option>
+        
+                        <option value="Beef">Beef</option>
+
+                        <option value="Fish">Fish</option>
+
+                    </select>
+                </p>
+               <!--Using TEXTAREA, to create a box where users can submit text. Using ROWS and COLS for the width and height-->
+                <p>
+
+                    <label for="requests">Do you have any allergies?</label>
+                    <textarea id="requests" name="reqs" rows="5" cols="10" placeholder="Hey Monte!"></textarea>
+                
+                </p>
+               
+                <!--Using the BUTTON element, making sure it remains within the form, not outside-->
+               <button>Send</button>
+            </form>
+    </selection>    
+</body>
+</html>
