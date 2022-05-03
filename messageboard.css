@@ -1,0 +1,81 @@
+/*This is a UNIVERSAL SELECTOR*/
+/* *   {
+    color:pink;
+    background-color: green;
+} */
+
+/*Element Selector*/
+body {
+    background-color: beige;
+}
+
+/*Changing the size of all buttons*/
+button {
+    font-size:30px;
+}
+
+/*Changing color for all font sizes*/
+h1, h2 {
+    color: crimson;
+}
+
+/*ID Selector*/
+#signup {
+    background-color: pink;
+    color:blue
+}
+
+/*Class Selector;Give span tag and put IN class*/
+.sec{
+    color:green;
+}
+/*Descendent Selector; Every anchor tag under post*/
+
+.post a {
+    color: hotpink;    
+}
+/*This is another example of a Descendent Selector; Anything under the post (parent) is the child/descendent*/
+footer > a{
+
+    color:purple;
+}
+/* Below we demonstrate an ATTRIBUTE SELECTOR*/
+input[type="password"]{
+
+    color:purple;
+}
+
+input[type="text"]{
+
+    color:red;
+}
+
+/* "*=" means check specific characters in the href string value. Note to self: specificy characters with astrid & equal*/
+a[href*="google"]{
+
+    color:darkorange;
+}
+
+/*Psuedo-classes: using :HOVER to change colors of buttons when you scroll over */
+button:hover {
+
+    background-color:red;
+    color:aquamarine;
+}
+
+/*Nested Psuedo-class using :ACTIVE. When you click over buttons, it will turn green ONLY for the buttons b/c that is what we selected and typed into the code */
+.post button:active {
+
+    background-color:green;    
+}
+
+/*Psuedo-Elements: using double colon to differenciate the class from the element. Changing color of the first letter for h2*/
+h2::first-letter {
+
+    font-size:50px;
+}
+/*Psuedo-Element with the first line of paragraph text; changing the color of the first line*/
+p::first-line {
+
+    color:green;
+}
