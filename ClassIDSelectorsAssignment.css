@@ -1,0 +1,49 @@
+/*Below are the ol of schools using CSS Class Selectors and also utilizing the color hex by manually inputing the color code with #*/
+.alabama{
+    color:crimson
+}
+
+.notredame{
+    color:green;
+}
+
+.michigan{
+    color:#cccc00;
+}
+
+.ohiostate{
+    color:red;
+}
+
+.oklahoma{
+    color:crimson;
+}
+
+.southerncalifornia{
+    color:red;
+}
+
+.texas{
+    color:#ff9900;
+}
+
+.miami{
+    color:green;
+}
+
+.nebraska{
+    color:red;
+}
+
+
+/*Below are my buttons using CSS ID Selector*/
+#yesiagree {
+    background-color:green;
+    color:white;
+}
+
+#noidontagree {
+    background-color:red;
+    color:white;
+
+}
