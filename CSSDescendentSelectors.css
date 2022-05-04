@@ -1,11 +1,24 @@
+/*Changing my header using ATTRIBUTE SELECTOR for CSS, font size and color*/
 header >a{
     
     color:yellow;
     font-size:30px;
 }
 
-#schools {
+/*Changing color of schools using ID and color */
+#usc{
+    color:red;
+}
 
+#wsu{
     color:crimson;
+}
 
+#kmva{
+
+    color:blue;
+}
+
+#wazzu{
+    color:crimson;
 }
