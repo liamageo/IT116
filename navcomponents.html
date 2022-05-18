@@ -67,9 +67,8 @@
 
                         </ul>
                     </li>
-
-
                 </ul>
+                
                 <!--Search bar, utilizing flex(allows you to align contents within the container) -->
                 <form class="d-flex" action="/testing">
 
@@ -79,10 +78,63 @@
 
                 </form>
             </div>
-        </div>
-        
-        
+        </div>       
     </nav>
+
+
+    <br>
+    <br>
+
+
+ <!--Creating Container for the header-->   
+        <section>
+            <!--Below showcases the difference of creating an HTML header vs. Bootstrap header-->
+            <div class="container card">
+                <h1>Header Without Bootstrap Class</h1>
+                <!--Below is an example of a header w/ Bootstrap class. Notice the text is significantly different than the first header and it's more appealing to the eye-->
+                <h1 class="display-1 text-center text-primary">Header With Bootstrap Class</h1>
+                <hr>
+                <!--Calling a different class element-->
+                <h1 class="display-4 text-center">Display 4 Header</h1>
+
+                <!--CSS Bootstrap Buttons-->
+                <button type="button" class="btn btn-success">GreenColor</button>
+                <button type="button" class="btn btn-warning">YellowColor</button>
+                <button type="button" class="btn btn-info">TealColor</button>
+
+                <button class="btn btn-outline-danger">RedButtonOutline</button>
+                <hr>
+                <h1 class="display-4 text-center">Paragraph Text</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut repudiandae adipisci velit,
+                        non repellat quaerat enim reprehenderit possimus? Ea, minus animi architecto cupiditate
+                        molestias possimus numquam pariatur explicabo provident quam!
+                    </p>
+
+                <hr>
+                <!--Creating a centered group of buttons. Note to self: btn is button-->
+                <h1 class="display-4 text-center">Group Buttons</h1>
+                <!--Exmaple of using pre-existing Bootstrap button styles-->
+                    <div class="btn-group">
+                        <button class="btn btn-info">One</button>
+                        <button class="btn btn-info">Two</button>
+                        <button class="btn btn-info">Three</button>
+                    </div>
+
+                <hr>
+                <br>
+                <!--Same concept as HTML, when adding an image: find img >> copy img >> paste within quotation marks of <img scr=""-->
+                <h1 class="display-4 text-center">Image Source with Bootstrap</h1>
+                <img src="https://www.nme.com/wp-content/uploads/2021/07/The-Legend-Of-Zelda-Ocarina-Of-Time-Credit-Nintendo-1@2000x1270.jpg">
+
+                <blockquote class="blockquote text-left bg-light">
+                    <p class="mb-2">"This is a cool quote about Zelda and Monte is a huge Zelda nerd."</p>
+
+                    <!--Example of the Typography on Bootstrap. Below we utilized the Blockquote element, which places quotes inside a block/container-->
+                    <footer class="blockquote-footer">Monte</footer>
+                </blockquote>
+            </div>
+                   
+        </section>
 
 
     <!--JavaScript plugin-->
