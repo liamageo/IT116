@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<!--Creating a DOM(tree like structure) Note to Self: Reminder that code is case-sensitive, triple check that the code is correct-->
+<body>
+    <!--Child node-->
+    <h1 id="test">Intro to JavaScript.</h1>
+
+    <!--Using the document.getElementById, we're able to change the inner text from our heading element-->
+    <script>    
+        document.getElementById("test") .innerHTML = "Hello World";
+
+        //creating a variable called name//
+        let name = prompt("What is your name?")
+        // Different functions in JS//
+        document.write(name); //<---Argument Parameter
+        console. log(name);
+        
+        alert (name);
+
+
+    </script>
+</body>
+</html>
