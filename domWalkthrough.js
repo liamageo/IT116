@@ -44,9 +44,9 @@ console.log(document.url);
 ///////////////////////////////////
 /////////GetElementByClassName
 
-var items = document.getElementsByClassName('list-group-item');
+// var items = document.getElementsByClassName('list-group-item');
 
-console.log(items);
+// console.log(items);
 
 //Referencing the items by their index
 // items[1].style.backgroundColor ='yellow';
@@ -82,13 +82,13 @@ console.log(items);
 //     console.log(i);
 // }
 
-// // 
+// 
 // const myDiamonds = ['Snacky','Scary','Lily','IttyBitty','Pinchie','Piggy','Lanky','Nibbles','Kibbles'];
 // for (let i = 0; i < myDiamonds.length; i++) {
 //     console.log(i, myDiamonds[i]);
 // }
 
-// Add comments
+// Using a for loop, we were able to change the style of listed items;Similar to CSS, but more convenient in my opinion.
 // for(var i=0; i < items.length; i++) {
 //     items[i].style.backgroundColor = 'grey';
 //     items[i].textContent = "Changing the List Items";
@@ -97,13 +97,67 @@ console.log(items);
 
 //////////////////////GetElementsByTagName
 
-// Calls all the 
-var li = document.getElementsByTagName('li');
+// Changing styles of listed items using JS DOM
+// var li = document.getElementsByTagName('li');
 
-console.log(li);
-console.log(li[1]);
+// console.log(li);
+// console.log(li[1]);
 
-li[1].textContent = "Hello 2 Now";
-li[1].style.fontWeight = 'bold';
-li[1].style.backgroundColor ='green';
-li[1].style.color = 'white';
+// li[1].textContent = "Hello 2 Now";
+// li[1].style.fontWeight = 'bold';
+// li[1].style.backgroundColor ='green';
+// li[1].style.color = 'white';
+
+// for(var i = 0; i <li.length; i++) {
+    
+//     // No need to put 1, because the "i" represents all the listed items.
+//     li[i].style.backgroundColor = 'lightgrey';
+//     li[i].textContent= "I changed The Items From the DOM";
+//     li[i].style.color= 'White';
+
+// }
+
+
+/////////////////////////////////////////////////////////////////////
+///////////////////////////Query Selector:
+
+// Creating another variable object, using the document class
+// var header =document.querySelector('#main-header');
+// header.style.borderBottom ='solid 4px hotpink';
+// //
+// var input = document.querySelector('input');
+// input.value = "I just changed the text value in the input box.";
+
+// // Using an attribute
+// var submit = document.querySelector ('input[type="submit"]');
+// submit.value = "HELLO BUTTON";
+
+// // Example of calling the last child, on the webpage item 8 will be in blue because it's the last child 
+// var lastItem = document.querySelector('.list-group-item:last-child');
+// lastItem.style.color = 'blue';
+
+// // Example of nth-child and calling a specific number in our list group items. When we save and refresh our webpage, item list 2 will be displayed in a coral color.
+// var otherItem = document.querySelector('.list-group-item:nth-child(2)');
+// otherItem.style.color = 'coral';
+
+////////////////////////////////////////////////////////////////////////////
+
+// Using the DOM Inspector and reviewing console because we are calling the class, both class titles will show.
+var titles = document.querySelectorAll('.title');
+console.log(titles);
+
+// Calling textContent, we're able to change the title
+titles[0].textContent = 'Hey Monte, I changed the title again';
+
+// Creating two different lists consisting of an even and odd nth-child variable for our listed items. 
+var odd = document.querySelectorAll('li:nth-child(odd)');
+var even = document.querySelectorAll('li:nth-child(even)');
+
+// Creating a for loop that alters the colors of the nth-child variables. We applied the same color to both the even and odd variables, but applied different background colors.
+for (var i = 0; i < odd.length; i++) {
+
+    odd[i].style.backgroundColor ='grey';
+    even[i].style.backgroundColor = 'green';
+    even[i].style.color = 'whitesmoke';
+    odd[i].style.color = 'whitesmoke';
+}
