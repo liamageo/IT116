@@ -1,22 +1,23 @@
 // console.log("Hello World");
 
+// Returns a number from 0-1, but doesn't include 1. 0 being inclusive, 1 being exclusive.
 // let randomNumber = Math.random(); //0.0-1
 
 // if (randomNumber < 0.50) {
 
+// You can put any piece of code, as long as the condition was met.
 //     console.log("Condition was Met");
 //     console.log(randomNumber);
 
 // }
 
-// // 
+// Using the DOM Inspector, we confirmed that the condition was met, due to 0.99 being greater than 0.5
 // if (randomNumber >= 0.5) {
 
 //     console.log('Condition Was Met');
 //     console.log(randomNumber); 
 // }
 
-// ^^^^LEE WATCH 06/07 LECTURE TO LEARN AND COMMENT THE CODE ABOVE^^^^
 
 // const dayOfWeek = 'Saturday';
 
@@ -46,7 +47,7 @@
 
 //     console.log("You're getting older.");
 // }
-// // IF ALL OTHER CONDITIONS FAIL - ELSE.
+// IF ALL OTHER CONDITIONS FAIL - ELSE.
 // else {
 
 //     console.log("You are over the age of 35.");
@@ -85,7 +86,7 @@
 //     } else {
 //         console.log("Password Cant Have Spaces");
 //     }
-// // If you input only 5 characters, "password is too short" is what will appear. 
+// If you input only 5 characters, "password is too short" is what will appear. 
 // } else {
 //     console.log("Password is too short");
 // }
